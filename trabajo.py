@@ -90,7 +90,7 @@ class GestorTareas:
         pendientes = total - completadas
         porcentaje = (completadas / total) * 100
 
-        print("\n📊 PRODUCTIVIDAD")
+        print("PRODUCTIVIDAD")
         print(f"Tareas totales: {total}")
         print(f"Completadas: {completadas}")
         print(f"Pendientes: {pendientes}")
@@ -98,7 +98,7 @@ class GestorTareas:
 
     
     def mostrar_alertas(self):
-        print("\n⚠ ALERTAS:")
+        print(" ALERTAS:")
         for t in self.tareas:
             dias = (t.fecha - datetime.now()).days
             if dias <= 2 and t.estado == "Pendiente":
